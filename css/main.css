@@ -1,0 +1,224 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: ProximaNova-BoldIt;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 2em;
+}
+.section{
+	text-align:center;
+}
+
+.sectionHeader {
+	overflow: hidden;
+}
+
+#section0 h1 {
+	padding-bottom: 5px;
+}
+
+#section1 p {
+	float:left;
+	padding-top: 200px;
+	padding-left: 150px;
+	text-align: left;
+}
+
+#plaatje1{
+	 float:right;  
+	 width: 750px;
+	 padding-top: 200px;
+}
+
+#section2 h1 {
+	padding-top: 25px;
+}
+
+#section2 p {	
+	float:right;
+	padding-top: 200px;
+	padding-right: 150px;
+	text-align: right;
+}
+
+#plaatje2{
+ 	float:left;   
+ 	width: 750px;
+ 	padding-top: 175px;
+}
+
+#section3 p {
+	float:left;
+	padding-top: 200px;
+	padding-left: 100px;
+	text-align: left;
+}
+
+#plaatje3{
+ 	float:right;  
+ 	width: 750px;
+ 	padding-top: 200px;
+}
+
+
+#section4 p {
+	float:right;
+	padding-top: 135px;
+	padding-right: 100px;
+	text-align: left;
+}
+
+
+#plaatje4{
+ float:left;   
+ width: 600px;
+ padding-top: 300px;
+ padding-left: 50px;
+}
+
+
+#section5 h1{
+	padding-top: 100px;
+}
+
+
+#section5 p {
+	float:left;
+	padding-top: 200px;
+	padding-left: 100px;
+	text-align: left;
+}
+
+
+#plaatje5{
+ float:right;  
+ width: 750px;
+ padding-top: 100px;
+}
+
+
+
+#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+}
+
+
+
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#038dd0;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#29a5e1;
+	color: #000;
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff;
+}
+#menu li.active a:hover{
+	color: #fff;
+}
+#menu li:hover{
+	background-color: #29a5e1;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:500px;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
