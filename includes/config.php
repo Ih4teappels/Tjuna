@@ -18,9 +18,9 @@ setlocale(LC_ALL, 'nl_NL');
         define('DB_PASSWORD','');
     } else {
         define('DB_HOST','127.0.0.1');
-        define('DB_NAME','tjuna');
-        define('DB_USERNAME','root');
-        define('DB_PASSWORD','');
+        define('DB_NAME','17786_tjuna');
+        define('DB_USERNAME','tjuna');
+        define('DB_PASSWORD','tjunapass');
     }
 
 ?>

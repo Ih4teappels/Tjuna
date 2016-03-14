@@ -47,8 +47,19 @@ abbr,acronym { border: 0;
 
 /* Custom CSS
  * --------------------------------------- */
+
+@font-face{
+	font-family: ProximaNova-Bold;
+	src: url(../fonts/ProximaNova-Bold.otf);
+}
+
+@font-face {
+	font-family: ProximaNova-Regular;
+	src: url(../fonts/ProximaNova-Regular.otf);
+}
+
 body{
-	font-family: ProximaNova-BoldIt;
+	
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -60,9 +71,11 @@ body{
 }
 h1{
 	font-size: 6em;
+	font-family: ProximaNova-Bold;
 }
 p{
 	font-size: 2em;
+	font-family: ProximaNova-Regular;
 }
 .intro p{
 	width: 50%;
@@ -76,6 +89,36 @@ p{
 .sectionHeader {
 	overflow: hidden;
 }
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(../imgs/bg1.jpg);
+		padding: 30% 0 0 0;
+	}
+
+#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+	}
 
 #section0 h1 {
 	padding-bottom: 5px;

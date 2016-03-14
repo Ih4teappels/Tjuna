@@ -51,12 +51,7 @@ include 'models/select_stappen.php';
 				navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth page', 'Fifth page'],
 
 				verticalCentered: true,
-				afterRender: function(){
-
-
-					//playing the video
-					$('video').get(0).play();
-				}
+				css3:false
 			});
 
 		});
@@ -73,13 +68,7 @@ include 'models/select_stappen.php';
 </ul>
 <div id="fullpage">
 	<div class="section" id="section0">
-        <img src="imgs/logo-use-spaced.png" alt="fullPage" width="450px" />
-		<h1>Stappenplan</h1>
-		<p>De workflow van Tjuna</p>
-		<video autoplay loop muted id="myVideo">
-			<source src="imgs/flowers.mp4" type="video/mp4">
-			<source src="imgs/flowers.webm" type="video/webm">
-		</video>
+
 	</div>
 
 	<?php 
