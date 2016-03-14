@@ -58,6 +58,11 @@ abbr,acronym { border: 0;
 	src: url(../fonts/ProximaNova-Regular.otf);
 }
 
+@font-face {
+	font-family: ProximaNova-Extrabold;
+	src: url(../fonts/ProximaNova-Extrabold.otf);
+}
+
 body{
 	
 	color: #333;
@@ -69,9 +74,15 @@ body{
 	width: 960px;
 	position: relative;
 }
-h1{
+h2{
 	font-size: 6em;
 	font-family: ProximaNova-Bold;
+	color: #202020;
+}
+h1 {
+	font-size: 6em;
+	font-family: ProximaNova-Extrabold;
+	color: #202020;
 }
 p{
 	font-size: 2em;
@@ -90,38 +101,9 @@ p{
 	overflow: hidden;
 }
 
-/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	#section0,
-	#section1,
-	#section2,
-	#section3{
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(../imgs/bg1.jpg);
-		padding: 30% 0 0 0;
-	}
-
-#section0 .layer{
-		position: absolute;
-		z-index: 4;
-		width: 100%;
-		left: 0;
-		top: 43%;
-	}
-
-	/*solves problem with overflowing video in Mac with Chrome */
-	#section0{
-		overflow: hidden;
-	}
-
 #section0 h1 {
-	padding-bottom: 5px;
+	padding-bottom: 1em;
+
 }
 
 #section1 p {

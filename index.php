@@ -5,7 +5,7 @@ require_once 'includes/config.php' ;
 // Maak de database connectie
 require_once 'includes/database.php' ;
 // De database Result to Array function
-include 'libs/functions.php';
+// include 'libs/functions.php';
 
 $stapId = isset($_GET['stapOption']) ? $_GET['stapOption'] : 1;
 
@@ -68,7 +68,9 @@ include 'models/select_stappen.php';
 </ul>
 <div id="fullpage">
 	<div class="section" id="section0">
-
+		<img src="imgs/logo.png" width="25%">
+		<h1>Volg hier het stappenplan</h1>
+		<h2>De workflow van Tjuna</h2>
 	</div>
 
 	<?php 

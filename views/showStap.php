@@ -7,5 +7,3 @@ while($stap = $result->fetch_assoc()) {
 }
 }
 ?>
-
-<!-- <img id="plaatje' . $j++ . '" src="imgs/' . $stap['image'] . '" alt="cool"> -->
