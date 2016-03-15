@@ -1,3 +1,4 @@
+<!-- Insert de nieuwe content die is ingevoerd vanuit het Editform -->
 <?php 
 if(isset($_POST['edit'])){
 
