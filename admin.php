@@ -1,16 +1,15 @@
 <?php 
+//Admin pagina om teksten te editen op de main page
 
 // Gebruikersnaam, wachtwoord van de database etc ophalen
 require_once 'includes/config.php' ;
 // Maak de database connectie
 require_once 'includes/database.php';
 
-
+// Als er geen stap is geselecteerd is hij automatisch 1
 $stapId = isset($_GET['stapOption']) ? $_GET['stapOption'] : 1;
 
-
-// if(isset($_POST['stapOption'])) $stapId = $_POST['stapOption'];
-
+// Haal de items op uit de database
 require_once 'models/select_singleStap.php';
 
 

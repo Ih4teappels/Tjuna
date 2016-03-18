@@ -1,17 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body{
 	font-family: ProximaNova-BoldIt;
 	color: #333;
 	color: rgba(0,0,0,1);
-	background-color: #b3dce1;
+	background-color: #fff;
 }
 
 #adminHeader {
 	text-align: center;
+	width: 100%;
+	background-color: #aeaeae;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 #adminHeader a {
 	text-decoration: none;
-	color: #1e7f91;
+	color: #000;
 }
 
 #adminHeader a:hover {
@@ -24,7 +33,6 @@ body{
 	padding-top: 3em;
 	padding-bottom: 20em;
 	text-align: center;
-	background-color: #32a3b1;
 
 }
 
@@ -44,30 +52,29 @@ body{
 	width: 50em;
 	display: block;
 	margin-bottom: 1em;
-	background-color: #b3dce1;
-	border: 1px solid #1EB8A7;
+	background-color: #fff;
 }
 
 #editForm #content {
 	width: 50em;
 	display: block;
 	margin-bottom: 1em;
-	background-color: #b3dce1;
-	border: 1px solid #1EB8A7;
+	background-color: #fff;
 }
 
 #editButton {
-	width: 50em;
 	display: block;
-	background-color: #1EB8A7;
+	background-color: #aeaeae;
 	border: none;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 50px;
+	padding-right: 50px;
 	font-weight: bold;
 }
 
 #editButton:hover {
-	background-color: #7fc6ce;
+	background-color: #d0cbcb;
 }
 
 #editForm {
@@ -77,4 +84,8 @@ body{
 
 #editForm h2 {
 	text-align: left;
+}
+
+#editForm h3 {
+	margin-bottom: 10px;
 }

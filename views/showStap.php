@@ -1,3 +1,4 @@
+<!-- fetched en echo'd alle items uit de query -->
 <?php 
 for ($i=1 & $j=1; $i & $j < 5; $i++ & $j) { 
 

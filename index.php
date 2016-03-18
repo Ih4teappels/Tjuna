@@ -1,20 +1,17 @@
+<!DOCTYPE html>
 <?php 
+//Hoofdpagina Tjuna One Page
 
 // Gebruikersnaam, wachtwoord van de database etc ophalen
 require_once 'includes/config.php' ;
 // Maak de database connectie
 require_once 'includes/database.php' ;
-// De database Result to Array function
-// include 'libs/functions.php';
-
-$stapId = isset($_GET['stapOption']) ? $_GET['stapOption'] : 1;
 
 include 'models/select_stappen.php';
 
 ?>
 
 
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/admin.css">
@@ -38,7 +35,7 @@ include 'models/select_stappen.php';
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1EB8A7', '#32a3b1', '#4caebb', '#66bac4', '#7fc6ce', '#b3dce1'],
+				sectionsColor: ['#2d929f', '#32a3b1', '#4caebb', '#66bac4', '#7fc6ce', '#b3dce1'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
 				menu: '#menu',
 				responsiveWidth: 900,
@@ -48,7 +45,7 @@ include 'models/select_stappen.php';
 
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth page', 'Fifth page'],
+				navigationTooltips: ['Tjuna', 'Functioneel Ontwerp', 'Technisch Ontwerp', 'Ontwikkeling', 'Testing', 'Lancering'],
 
 				verticalCentered: true,
 				css3:false
@@ -58,7 +55,8 @@ include 'models/select_stappen.php';
 	</script>
 </head>
 <body>
-	<ul id="menu">
+<div id="menu">
+	<ul>
 	<li id="1st" data-menuanchor="firstPage"><a href="#firstPage">Tjuna</a></li>
 	<li id="2nd" data-menuanchor="secondPage"><a href="#secondPage">Functioneel Ontwerp</a></li>
 	<li id="3rd" data-menuanchor="3rdPage"><a href="#3rdPage">Technisch Ontwerp</a></li>
@@ -66,11 +64,13 @@ include 'models/select_stappen.php';
     <li id="5th" data-menuanchor="5thPage"><a href="#5thPage">Testing</a></li>
     <li id="6th" data-menuanchor="6thPage"><a href="#6thPage">Lancering</a></li>
 </ul>
+</div>
 <div id="fullpage">
 	<div class="section" id="section0">
-		<img src="imgs/logo.png" width="25%">
+		<img src="imgs/logo.png" alt="TjunaLogo">
 		<h1>Volg hier het stappenplan</h1>
 		<h2>De workflow van Tjuna</h2>
+		<img src="imgs/pijl.png" id="pijl" alt="arrowDown">
 	</div>
 
 	<?php 
@@ -80,4 +80,3 @@ include 'models/select_stappen.php';
 </div>
 </body>
 </html>
-
