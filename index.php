@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php 
 //Hoofdpagina Tjuna One Page
 
@@ -11,7 +12,6 @@ include 'models/select_stappen.php';
 ?>
 
 
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/admin.css">
